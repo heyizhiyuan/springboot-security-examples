@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link type="text/css"  href="./css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+        <form th:action="@{/logout}" action="/logout" method="get">
+            <input type="submit" value="登出" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>

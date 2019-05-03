@@ -1,0 +1,42 @@
+server:
+  port: 10000
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /security
+
+spring:
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages
+  banner:
+    charset: UTF-8
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springsecurity?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  thymeleaf:
+    enabled: true
+    mode: HTML
+    encoding: UTF-8
+    prefix: classpath:/templates
+    suffix: .html
+    cache: false
+  security:
+    user:
+      name: admin
+      password: $2a$10$1Ut1mNrqXtf4iwmXJM8V7O0zdZ1gBkoOPZ7/SD1ahRdyAcQpWkFyy
+      role: ADMIN
+  jwt:
+    headerName: jwtheader
