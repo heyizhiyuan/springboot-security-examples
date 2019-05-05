@@ -10,10 +10,13 @@
         <module name="springboot-security" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="9">
-      <module name="springboot-jwt" target="1.5" />
-      <module name="springboot-security" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="springboot-jwt" target="1.8" />
+      <module name="springboot-security" target="8" />
       <module name="springboot-security-examples" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
   </component>
 </project>
