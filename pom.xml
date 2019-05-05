@@ -15,7 +15,7 @@
     </modules>
     <groupId>com.cnj</groupId>
     <packaging>pom</packaging>
-    <artifactId>springboot-securitys</artifactId>
+    <artifactId>springboot-security-examples</artifactId>
     <version>1.0</version>
     <properties>
         <java.version>1.8</java.version>
